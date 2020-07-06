@@ -1,0 +1,27 @@
+:root {
+    
+    --primaryColor: #818181;
+    --secondaryColor: #f4f4f4;  
+    --bgMenuActive: #818181;
+    --bgButton: #818181;
+    --bgAside: var(--primaryColor);   
+
+}
+#app aside.hc-aside{
+    display: none;
+}
+#app header.hc-liveness__header{
+    background: #bab9b8;
+    padding: 0 10px;
+}
+#app header.hc-liveness__header > h1{
+    visibility: hidden;
+}
+#app header.hc-liveness__header > h1::before{
+    content: "Monitoreo DEOTR";
+    visibility: visible;
+}
+#app table.hc-checks-table thead.hc-checks-table__header > tr > th:last-child,
+#app table.hc-checks-table tbody.hc-checks-table__body > tr > td:last-child{
+    display: none;
+}
